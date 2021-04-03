@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="Bootleg chat" property="og:title">
+    <meta content="Now it actually works, poggers" property="og:description">
+    <script src="client.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Egg</title>
+</head>
+<body>
+    <template id="message-template">
+        <div class="message">
+            <img src="{avatar}" width="32" height="32" class="message-avatar" ><pre class="message-author text">{author}</pre><br><pre class="message-content text">{message}</pre>
+        </div>
+    </template>
+    <template id="embed-template">
+        <div class="embed" style="border-left-color: #{color};">
+            <strong><p class="text embed-title" style="font-size:medium">{title}</p></strong>
+            <p class="text embed-description">{description}</p>
+            <p class="text embed-footer" style="font-size: smaller;">{footer}</p>
+        </div>
+    </template>
+    <template id="user-template">
+        <div class="user sidebar-element">
+            <img src="{avatar}" width="32" height="32" class="user-avatar"><pre class="user-name text">{user}</pre>
+        </div>
+    </template>
+    <div id="sidebar" style="width:13%;right:0;position: fixed">
+        <h3 class="sidebar-element text" style="font-size: small;">Connected users<h3>
+        <div id="connected-users" class="sidebar-element">
+
+        </div>
+    </div>
+    <div id="content" style="margin-right:13%">
+        <div class="messages"></div>
+        <iframe src="" frameborder="0" name="dummyframe" id="dummyframe" hidden></iframe>
+        <form method="POST" id="message-input-form" target="dummyframe">
+            <input type="text" name="message-input" id="message-input" autocomplete="off" placeholder="Send a message" class="input"><input type="submit" id="send">
+        </form>
+    </div>
+</body>
+</html>

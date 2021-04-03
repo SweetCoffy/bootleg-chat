@@ -1,0 +1,121 @@
+body {
+    --bg: rgb(52, 53, 56);
+    background-color: var(--bg);
+    overflow: hidden;
+}
+.text {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
+}
+.message {
+    display: flex;
+    width: 100%;
+}
+.message-content {
+    padding-left: 20px;
+    font-size: small;
+}
+#connected-users {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 95vh;
+}
+.message-author {
+    padding-left: 10px;
+    font-size: small;
+}
+.message-avatar {
+    padding-top: 14px;
+}
+.user-avatar { padding-top: 1; margin-right: 10%; float: left }
+.user-name { right: 0; font-size: small; padding-left: 30%}
+.messages {
+    overflow-y: scroll;
+    overflow-x: auto;
+    height: 95vh;
+    width: 85vw;
+}
+body::-webkit-scrollbar-track {
+    background-color: rgb(45, 47, 53);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 59, 80);
+}
+.input {
+    --input-color: rgb(60, 60, 63);
+    background-color: var(--input-color);
+    border-color: var(--input-color);
+    border-radius: 5px;
+    border-style: solid;
+    color: white;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-duration: 300ms;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    width: 80vw;
+}
+a {
+    color: rgb(0, 140, 255);
+}
+a:hover {
+    color: rgb(0, 89, 255);
+}
+.input:hover {
+    --hover-color: rgb(89, 91, 99);
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+#send {
+    --button-color: rgb(70, 70, 80);
+    animation-duration: 300ms;
+    animation-timing-function: cubic-bezier();
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    border-style: solid;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    width: 4.7vw;
+    color: white;
+}   
+#send:hover {
+    --hover-color: rgb(111, 111, 128);
+    animation-duration: 300ms;
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+} 
+.embed {
+    background-color: #242527;
+    border-style: solid;
+    border-color: #242527;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 10px;
+    width: 300px;
+    padding-top: 5px;
+    margin: auto;
+    float: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transform:translateX(50px);
+} 
+button {
+    --button-color: rgb(70, 70, 80);
+    animation-duration: 300ms;
+    animation-timing-function: cubic-bezier();
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    border-style: solid;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    width: 4.7vw;
+    color: white;
+}   
+button:hover {
+    --hover-color: rgb(111, 111, 128);
+    animation-duration: 300ms;
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}   
